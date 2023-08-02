@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer List</title>
+  </head>
+  <body>
+    <h1>Customer List</h1>
+    <table id="customerTable">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Street</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+    <br /><br />
+
+    <button id="addCustomerButton">Add Customer</button>
+
+    <!-- add modal for adding/updating a customer -->
+    <div id="customerModal" class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <span class="close">×</span><br /><br />
+
+        <!-- form for adding/updating a customer -->
+        <form id="customerForm">
+          <input type="hidden" id="uuid" name="uuid" />
+          <label for="firstName">First Name:</label><br /><br />
+          <input type="text" id="firstName" name="firstName" /><br /><br />
+
+          <label for="lastName">Last Name:</label><br /><br />
+          <input type="text" id="lastName" name="lastName" /><br /><br />
+
+          <label for="street">Street:</label><br /><br />
+          <input type="text" id="street" name="street" /><br /><br />
+
+          <label for="address">Address:</label><br /><br />
+          <input type="text" id="address" name="address" /><br /><br />
+
+          <label for="city">City:</label><br /><br />
+          <input type="text" id="city" name="city" /><br /><br />
+
+          <label for="state">State:</label><br /><br />
+          <input type="text" id="state" name="state" /><br /><br />
+
+          <label for="email">Email:</label><br /><br />
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <label for="phone">Phone:</label><br /><br />
+          <input type="tel" id="phone" name="phone" /><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <script src="customerList.js"></script>
+  </body>
+</html>
